@@ -1,0 +1,680 @@
+$verdeO: rgb(17, 80, 17);
+$verdeClaro: #4db748;
+$rosita: #fae8da;
+$cienpx: 100px;
+$blanquito: #F2F9F1;
+
+*{
+    box-sizing: border-box;
+}
+#imagen {
+    width: 65px;
+    height: 65px;
+    transition: all 0.5s;
+}
+#imagen:hover {
+    transform: rotate(360deg);
+}
+#imagen404 {
+    width: 60px;
+    height: 60px;
+    transition: all 0.5s;
+    margin-bottom: 15px;
+}
+.wrapper-error {
+    text-align: center;
+    color: $verdeO;
+    margin-top: 60px;
+    max-width: $cienpx * 4;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: $cienpx;
+    padding: 20px;
+    background-color: $rosita;
+    border: solid $verdeO;
+}
+#imagen404:hover {
+    transform: rotate(360deg);
+}
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: $blanquito;
+}
+header {
+    background-color: $rosita;
+    height: $cienpx + 20px;
+}
+nav {
+    padding: 8px;
+}
+.logo {
+    float: left;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+#opaco {
+    opacity: 1;
+}
+.logo a {
+    color: $verdeO;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    font-family: 'Abril Fatface', cursive;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+.logo a:hover {
+    opacity: 1;
+}
+nav ul {
+    float: right;
+    margin-top: 10px;
+}
+nav ul li {
+    display: inline-block;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: $verdeO;
+}
+nav ul li:not(:first-child) {
+    margin-left: 45px;
+}
+nav ul li:last-child {
+    margin-right: 24px;
+}
+nav ul li a {
+    display: inline-block;
+    outline: none;
+    color: $verdeO;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: all 0.2s;
+}
+nav ul li a:hover {
+    opacity: 1;
+}
+#seleccionado {
+    border-bottom: solid;
+    color: $verdeO;
+    opacity: 1;
+}                               /*INDEX*/
+.wrapper {
+    max-width: 940px;
+    margin-top: $cienpx + 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: $cienpx;
+    color: $blanquito;
+  }
+  
+  .wrapper > div {
+    border: 2px solid $verdeO;
+    padding: 0.5em;
+    color: $blanquito;
+    background-color:  $verdeClaro;
+    background-image: url("imagenes/vede-fondo.jpg");
+    background-size: cover;
+  }.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  .one:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .one h1 {
+    font-size: 60px;
+  }
+  .two { 
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    transition: all 0.2s ease;
+  }
+  .two:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    transition: all 0.2s ease;
+  }
+  .three:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .four {
+    grid-column: 3;
+    grid-row: 3;
+    transition: all 0.2s ease;
+  }
+  .four:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .five {
+    grid-column: 2;
+    grid-row: 4;
+    transition: all 0.2s ease;
+  }
+  .five:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .six {
+    grid-column: 3;
+    grid-row: 4;
+    transition: all 0.2s ease;
+  }
+  .six:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .wrapper-quienes {
+    display: grid;
+    max-width: 940px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax($cienpx, auto);
+  }
+  .wrapper-quienes div {
+    color: $verdeO;
+    font-family: 'Poppins', sans-serif;
+    background-color: $rosita;
+    border: solid $verdeO;
+    transition: all 0.4s;
+  }
+  .wrapper-quienes div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .wrapper-quienes p {
+      margin: 15px;
+  }
+  .wrapper-quienes h2 {
+      margin: 25px;
+  }
+  .wrapper-quienes span {
+      margin-left: 5px;
+  }
+  .unoQuienes {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  .unoQuienes p{
+    margin: 15px;
+  }
+  .unoQuienes h2 {
+      margin: 25px;
+  }
+  .dosQuienes {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    transition: all 0.2s ease;
+  }
+  .dosQuienes img {
+      margin-top: $cienpx / 4;
+      margin-bottom: 13px;
+  }
+  #centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: $verdeO;
+}
+#centro h3 {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+#imagen2 {
+    width: $cienpx + 20px;
+    height: $cienpx + 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    transition: all 0.7s;
+}
+#imagen2:hover {
+    transform: rotate(720deg);
+}
+#wsp {
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+#wsp p {
+    color: $verdeO;
+    opacity: 0.5;
+    margin: 10px;
+    transition: all 0.2s ease;
+}
+#wsp p:hover {
+    opacity: 1;
+}
+#imagen-contacto {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+#imagen-contacto:hover {
+    opacity: 1;
+}
+                                 /*FOOTER*/
+footer {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	height: $cienpx;
+	color: $verdeO;
+	margin: 0;
+	padding: 0;	
+    bottom: 0;
+    background-color: $rosita;
+}
+
+footer div {
+    padding-top: 40px;
+    color: $verdeClaro;
+}
+footer p {
+	margin: 0;
+	padding: 0;
+}
+footer div p a {
+    text-decoration: none;
+    color: $verdeClaro;
+    transition: all 0.4s;
+}
+footer div p a:hover {
+    color: $verdeO;
+    text-decoration: none;
+}
+.container-planes {
+    position: relative;
+    max-width: 940px;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: $cienpx;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+.container-planes .card {
+    position: relative;
+    height: 250px;
+    background-color: $rosita;
+    display: flex;
+    width: 45%;
+    margin: 30px 0;
+    border-radius: 0;
+    border: solid $verdeO;
+}
+.container-planes .card .imgbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $rosita;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+}
+.container-planes .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container-planes .card:hover .imgbox {
+    width: $cienpx + 50px;
+    height: $cienpx + 50px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.4s ease-in-out;
+    background-color: $rosita;
+    border: solid $verdeO;
+}
+.container-planes .card .imgbox:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: $verdeO;
+    font-weight: 700;
+}
+.container-planes .card .imgbox img {
+    max-width: $cienpx;
+    transition: 0.4s ease-in-out;
+}
+.container-planes .card:hover .imgbox img {
+    max-width: $cienpx - 25px;
+}
+.container-planes .card .content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-planes .card .content h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $verdeO;
+}
+.container-planes .card .content a {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: $verdeO;
+    color: $blanquito;
+} 
+#planes-nutricionales h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 0;
+    color: $verdeO;
+}
+
+.wrapper-contacto {
+    margin-top: 60px;
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: $cienpx;
+    padding: 0 20px;
+}
+.contact-form {
+    max-width: $cienpx * 5.5;
+    margin: 0 auto;
+    background: $rosita;
+    padding: 30px;
+    display: flex;
+    border: solid $verdeO;
+}
+.input.fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.input-fields, .msg {
+    width: 48%;
+
+}
+.input-fields, .input, .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid $verdeO;
+    padding: 10px;
+    width: 100%;
+}
+.msg textarea {
+    height: 212px;
+}
+::-webkit-input-placeholder {
+    color: $verdeO;
+}
+::-moz-input-placeholder {
+    color: $verdeO;
+}
+::-ms-input-placeholder {
+    color: $verdeO;
+}
+.contact-btn {
+    background: $verdeO;
+    text-align: center;
+    padding: 15px;
+    color: $rosita;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.contact-btn:hover {
+    background: $verdeO;
+}
+#viernes {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card p span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+                                /*RESPONSIVE*/
+@media screen and (max-width: 864px) {
+    .wrapper-quienes {
+        display: flex;
+        flex-direction: column;
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper-quienes div {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    #centro h3 {
+        text-align: center;
+    }
+    .one h1 {
+        font-size: 40px;
+      }
+    
+    
+} 
+@media (max-width: 1200px) {
+    .logo {
+        padding: 0;
+    } 
+    .nav-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: $rosita;
+        opacity: 0;
+        transition: all 0.2s ease;     
+    }
+    .nav-wrapper ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+    .nav-wrapper ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .nav-wrapper ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+    }
+    .nav-wrapper ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+    }
+    .nav-wrapper ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+    }
+    .nav-wrapper ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+    }
+    .nav-wrapper ul li:nth-child(5) a {
+        transition-delay: 0.6s;
+    }
+
+    .nav-wrapper ul li:not(:first-child) {
+        margin-left: 0;
+    }
+    .nav-wrapper ul li a {
+        padding: 10px 24px;
+        opacity: 0;
+        color: $verdeO;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+        transform: translateX(-20px);
+        transition: all 0.2s ease;   
+    }
+    .nav-btn {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9999;
+        font-family: Poppins;
+    }
+    .nav-btn i {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: $verdeO;
+        margin-left: 14px;
+
+    }
+
+    .nav-btn i:nth-child(1) {
+        margin-top: 16px;
+    }
+    .nav-btn i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+    }
+    .nav-btn i:nth-child(3) {
+        margin-top: 4px;
+    }
+    
+    #planes-nutricionales h1 {
+        font-size: 40px;
+    }
+    
+} 
+
+@media (max-width: 768px) {
+    .contact-form {
+        flex-direction: row;
+    }
+    .msg textarea {
+        height: $cienpx - 20px;
+    }
+    .input-fields, .msg {
+        width: 100%;
+    }
+    .container-planes {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-planes .card .imgbox:before {
+        font-size: 5em;
+    }
+    .container-planes .card {
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+    .container-planes .card .imgbox {
+        position: relative;    
+    }
+    .container-planes .card .imgbox,
+    .container-planes .card:hover .imgbox {
+        width: 100%;
+        height: $cienpx * 2;
+        left: 0;
+        border: none; 
+    }
+    .container-planes .card .imgbox img,
+    .container-planes .card:hover .imgbox img {
+        max-width: $cienpx;
+    }
+    .container-planes .card .content {
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+#nav:checked + .nav-btn {
+    transform: rotate(45deg);
+}
+#nav:checked + .nav-btn i {
+    background: $verdeO;
+    transition: transform 0.2s ease;
+}
+#nav:checked + .nav-btn i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+}
+#nav:checked + .nav-btn i:nth-child(2) {
+    opacity: 0;
+}
+#nav:checked + .nav-btn i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+}
+#nav:checked ~ .nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+}
+#nav:checked ~ .nav-wrapper ul li a {
+    opacity: 1;
+    transform: translateX(0);
+}
+.hidden {
+    display: none;
+}
