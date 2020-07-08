@@ -8,6 +8,7 @@
 }
 #imagen:hover {
     transform: rotate(360deg);
+    filter: drop-shadow(0 0 0.25rem #115011);
 }
 #imagen404 {
     width: 60px;
@@ -58,6 +59,14 @@ nav {
     margin-left: 16px;
     margin-top: 8px;
 }
+.logo a span {
+    font-weight: 400;
+    transition: all 0.1s;
+}
+.logo a:hover span {
+    font-weight: 700;
+    color: #4db748;
+}
 #opaco {
     opacity: 1;
 }
@@ -67,7 +76,7 @@ nav {
     font-size: 18px;
     letter-spacing: 0px;
     text-decoration: none;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Poppins', sans-serif;
     opacity: 0.8;
     transition: all 0.2s;
 }
